@@ -2,6 +2,13 @@
 elasticsearch:
   hosts:
     localhost:
-      ansible_connection: ssh
+#      ansible_connection: ssh
+#      ansible_port: 2222
+      ansible_connection: local
       ansible_user: root
-      
+kibana:
+  hosts:
+    localhost:
+      ansible_connection: local
+      ansible_user: root
+
